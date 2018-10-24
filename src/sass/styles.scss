@@ -1,3 +1,12 @@
 @import './components/normalize.scss';
 @import './components/variables.scss';
 @import './components/base.scss';
+
+.item{
+    height: 20%;
+}
+
+.innerImage{
+    max-height: 100%;
+    width: auto;
+}

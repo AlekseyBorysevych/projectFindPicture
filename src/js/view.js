@@ -1,8 +1,11 @@
-import template from './../templates/card.hbs';
+import template from "./../templates/card.hbs";
 
 export default class View {
-  constructor() {
+  constructor() {}
 
+  display(items, target) {
+    target.innerHTML = "";
+    const markup = items.reduce((acc, element) => acc + template(element), ``);
+    target.innerHTML = markup;
   }
-
 }
